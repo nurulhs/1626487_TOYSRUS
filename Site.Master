@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="J39758_CO5027_ASG1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title> Toys R US</title>
+    <link type="text/css" rel="stylesheet" href="StyleSheet.css" media="screen" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="Logo">
+        
+        <img src ="IMAGE/lego.jpg" alt="TOYS R US"  />
+            </div>
+           <div id="Status_Button">
+            <asp:LoginName ID="LoginName1" runat="server" />
+            <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="StatusVerification" />
+        </div>
+
+         <h1>"Build it Play On Imagine in Colour..." - John Comley</h1>
+        <p></p>
+        <div class="registration">
+            <a href="Register.aspx">Register</a>
+        </div>
+
+        <nav>
+  <ul>
+     <li><a href="Default.aspx">HOME</a></li>
+     <li><a href="Product.aspx">PRODUCT</a></li>
+     <li><a href="About.aspx">ABOUT</a></li>
+      <li><a href="Contact.aspx">CONTACT</a></li>
+     <li><a href="Login.aspx">LOG IN</a></li>
+
+  </ul>
+</nav>
+
+
+        
+
+     <div id="content">
+         <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div>
+      </div>
+
+    <asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>
+        <footer class="BoxFooter">
+		<p>Copyright &copy; 1626487/J39758</p>
+		
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        		<img src="http://jigsaw.w3.org/css-validator/images/vcss"
+            	alt="Valid CSS!" class="valid" />
+			</a>
+
+	
+		
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="Valid CSS!" class="valid" />
+			</a>
+                <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> 
+                |
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a> 
+             
+		
+	</footer>
+    </form>
+
+    </body>
+</html>
